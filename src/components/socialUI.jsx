@@ -32,11 +32,7 @@ class Socials extends Component {
             </a>
           </div>
           <div className="col img-center">
-            <a
-              href="../files/vanNoppen_DZachary_Resume.pdf"
-              download
-              target="_blank"
-            >
+            <a href="/vanNoppen_DZachary_Resume.pdf" download target="_blank">
               <img src={resumeImage} alt="Resume" />
             </a>
           </div>

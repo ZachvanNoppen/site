@@ -78,7 +78,7 @@ class Base extends Component {
         <div className="container text-center">
           <p className="p-5 mt-3 styled-text">
             Reach me by email, or through one of the methods listed on my
-            <a href="../files/vanNoppen_DZachary_Resume.pdf" download>
+            <a href="/vanNoppen_DZachary_Resume.pdf" download>
               <span> resume</span>
             </a>
           </p>
