@@ -14,7 +14,7 @@ class Socials extends Component {
       <div className="container">
         <div className="row indent">
           <div className="col img-center">
-            <a href="" target="_blank">
+            <a href="mailto:dzachvannoppen@gmail.com" target="_blank">
               <img src={emailImage} alt="Email image" />
             </a>
           </div>
@@ -32,7 +32,11 @@ class Socials extends Component {
             </a>
           </div>
           <div className="col img-center">
-            <a href="../files/resume.docx" download target="_blank">
+            <a
+              href="../files/vanNoppen_DZachary_Resume.pdf"
+              download
+              target="_blank"
+            >
               <img src={resumeImage} alt="Resume" />
             </a>
           </div>

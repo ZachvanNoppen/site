@@ -9,6 +9,13 @@ body {
   font-size: 25px;
   padding: 10% 0;
 }
+.styled-text a {
+  color: #ee9212;
+}
+.styled-text a:hover {
+  text-decoration: none;
+  font-weight: 500;
+}
 .highlightText {
   color: #ee9212;
   font-weight: 500;

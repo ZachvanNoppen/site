@@ -14,7 +14,7 @@ class Base extends Component {
 
     return (
       <div className="">
-        <nav className="navbar navbar-expand-lg navbar-dark">
+        <nav className="navbar navbar-expand-md navbar-dark">
           <a className="navbar-brand" href="#">
             zach<span className="highlightText"> van noppen</span>
           </a>
@@ -76,12 +76,9 @@ class Base extends Component {
         </div>
         <Title link="contact" text="contact" location="right" />
         <div className="container text-center">
-          <p className="p-5 mt-3">
+          <p className="p-5 mt-3 styled-text">
             Reach me by email, or through one of the methods listed on my
-            <a
-              href="../files/resume.docx"
-              download="resume_zacharyvannoppen.docx"
-            >
+            <a href="../files/vanNoppen_DZachary_Resume.pdf" download>
               <span> resume</span>
             </a>
           </p>
