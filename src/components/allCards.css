@@ -1,0 +1,6 @@
+@media (max-width: 576px) {
+  .card-group {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}

@@ -1,0 +1,57 @@
+body {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.styled-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 25px;
+  padding: 10% 0;
+}
+.highlightText {
+  color: #ee9212;
+  font-weight: 500;
+}
+
+.navbar a {
+  color: white;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+}
+
+.navbar .navbar-brand {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+}
+
+.paragram {
+  background: #ee9212;
+  position: relative;
+  z-index: 1;
+}
+.paragram::before,
+.paragram::after {
+  background: inherit;
+  content: "";
+  display: block;
+  height: 20%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+}
+.paragram::after {
+  top: 0;
+  transform: skewY(-7deg);
+  transform-origin: 0%;
+}
+
+.paragram::before {
+  bottom: 0;
+  transform: skewY(-5deg);
+  transform-origin: 100%;
+}
