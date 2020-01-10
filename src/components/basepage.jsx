@@ -93,6 +93,7 @@ class Base extends Component {
           <div className="container row mb-5 text-center">
             <Badge name="HTML5" colour="black" bg="#FF5F47" />
             <Badge name="CSS" colour="black" bg="#47ABFF" />
+            <Badge name="Bootstrap" colour="black" bg="#47ABFF" />
             <Badge name="Javascript" colour="black" bg="#FFCE2A" />
             <Badge name="Node.js" colour="black" bg="#FFCE2A" />
             <Badge name="React" colour="black" bg="#FFCE2A" />
