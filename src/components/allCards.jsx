@@ -94,7 +94,7 @@ class Projects extends Component {
           links={[
             {
               name: "github",
-              link: "https://github.com/ZachvanNoppen/website"
+              link: "https://github.com/ZachvanNoppen/site"
             },
             {
               name: "website",
