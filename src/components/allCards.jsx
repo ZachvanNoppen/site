@@ -53,7 +53,7 @@ class Projects extends Component {
         <Card
           title={"Seeing Sound"}
           image={SoundImage}
-          description="A project made in openFrameworks to create an interactive musical experience"
+          description="A project made to create an interactive musical experience."
           lang={[this.state.languages[3]]}
           links={[
             {
@@ -69,7 +69,7 @@ class Projects extends Component {
         <Card
           title={"Hagrid's Handlebar"}
           image={HandlebarImage}
-          description="A game controller made to replicate motorcylce controls in a custom 3D envionment"
+          description="A motorcylce game controler to move in a custom 3D envionment"
           lang={[this.state.languages[3], this.state.languages[5]]}
           links={[
             {
@@ -85,7 +85,7 @@ class Projects extends Component {
         <Card
           title={"Personal Website"}
           image={PersonalImage}
-          description="An in progress portfolio site created in React to learn the framework and display the work I do"
+          description="An in progress portfolio site created in React to learn the framework and display the work I do."
           lang={[
             this.state.languages[2],
             this.state.languages[4],
@@ -134,7 +134,7 @@ class Projects extends Component {
         <Card
           title={"Sound Visualiser"}
           image={VisualiserImage}
-          description="An microcontroller that listens for ambient sound and animates LED's accordingly. Colour profiles are picked via blutooth from any connected computer."
+          description="An microcontroller that listens for ambient sound and animates LED's accordingly. Colour profiles are picked remotely via blutooth."
           lang={[this.state.languages[3], this.state.languages[5]]}
           links={[
             {
