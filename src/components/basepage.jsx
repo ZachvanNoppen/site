@@ -119,6 +119,7 @@ class Base extends Component {
             <Badge name="AfterEffects" colour="black" bg="#DE6356" />
             <Badge name="Premier" colour="black" bg="#DE6356" />
             <Badge name="Maya2019" colour="black" bg="#56DEB9" />
+            <Badge name="UbuntuServer" colour="black" bg="#ff8b3d" />
           </div>
         </div>
       </div>
