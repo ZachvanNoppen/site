@@ -21,7 +21,7 @@
   <body>
     <div class="container h-100">
       <div class="row h-100 justify-content-center align-items-center">
-        <form class="col-12">
+        <form class="col-6">
           <div class="row p-2 justify-content-around">
             <div
               class="btn-group btn-group-toggle px-3 py-1"
@@ -657,12 +657,8 @@
           }
           console.log(flag);
           if (flag === 64) {
-            let templateParams = {
-              toName: "asdf",
-              fromName: "asdfasdf",
-              msgHTML: "asdfdd",
-            };
-            emailjs.send("gmail", "template_7bbjbDM5", templateParams).then(
+            let templateParams = {};
+            emailjs.send("gmail", "tojusto", templateParams).then(
               function (response) {
                 console.log("SUCCESS!", response.status, response.text);
                 window.location.href = "https://zacharyvannoppen.com/gate/pass";

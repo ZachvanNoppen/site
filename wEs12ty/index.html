@@ -16,14 +16,37 @@
       crossorigin="anonymous"
     />
 
-    <title>to</title>
+    <title>Key</title>
   </head>
   <body>
     <div class="container h-100">
       <div class="row h-100 justify-content-center align-items-center">
         <form class="col-12">
           <div class="row p-2 justify-content-around">
-            <img src="l.png" />
+            <h1>
+              <div class="input-group input-group-lg">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-lg">
+                  </span>
+                </div>
+                <input
+                  id="in"
+                  type="text"
+                  class="form-control"
+                  aria-label="Large"
+                  aria-describedby="inputGroup-sizing-sm"
+                />
+              </div>
+              <div class="row justify-content-around">
+                <h6 id="err" style="color: red;"></h6>
+              </div>
+              <div id="hidden" style="display: none;">
+                4FFW+F7 Osgoode, Ottawa, ON
+              </div>
+              <div class="row justify-content-around">
+                <div id="sub" class="btn btn-primary m-3">Sumbit</div>
+              </div>
+            </h1>
           </div>
         </form>
       </div>
@@ -60,6 +83,23 @@
 
       $(document).ready(function () {
         resize();
+        $("input").click(function () {
+          $("#err").text(" ");
+          $("#err").css("color", "red");
+        });
+
+        $("#sub").click(function () {
+          let data = $("#in").val();
+
+          if (data == 734) {
+            $("#err").text("Correct!");
+            $("#err").css("color", "green");
+            $("#hidden").css("display", "block");
+          } else {
+            $("#err").text("Try again");
+          }
+          console.log(data);
+        });
       });
     </script>
   </body>

@@ -53,22 +53,7 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
     ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("user_xb75a42qPIhxSSK1trVj7");
-      })();
-    </script>
     <script>
-      let key = [
-        [true, false, false, false, false, false, false, true],
-        [true, false, false, false, false, false, false, true],
-        [true, false, false, false, false, false, false, true],
-        [true, false, false, false, false, false, false, true],
-        [true, false, false, false, false, false, false, true],
-        [true, false, false, false, false, false, false, true],
-        [true, false, false, false, false, false, false, true],
-        [true, false, false, false, false, false, false, true],
-      ];
       function resize() {
         var h = $(window).height() + "px";
         document.getElementsByTagName("body")[0].style.height = h;
@@ -78,46 +63,6 @@
 
       $(document).ready(function () {
         resize();
-
-        $("label").click(function () {
-          console.log("test");
-          $(this).toggleClass("btn-light");
-          $(this).toggleClass("btn-dark");
-        });
-
-        let flag = 0;
-        $("#submit").click(function () {
-          let data = document.getElementsByTagName("label");
-          console.log(data);
-          for (let i = 0; i < 8; i++) {
-            for (let j = 0; j < 8; j++) {
-              if (data[i * 8 + j].classList.contains("btn-dark") == key[i][j]) {
-                flag++;
-              }
-            }
-          }
-          console.log(flag);
-          if (flag == key.length * key[0].length) {
-            emailjs
-              .send("gmail", "template_7bbjbDM5", {
-                toName: "HACKED",
-                fromName: "asdf",
-                msgHTML: "",
-              })
-              .then(
-                function (response) {
-                  console.log("SUCCESS!", response.status, response.text);
-                },
-                function (error) {
-                  console.log("FAILED...", error);
-                }
-              );
-
-            window.location.href("www.zacharyvannoppen.com/gate/pass");
-          } else {
-            alert("False!");
-          }
-        });
       });
     </script>
   </body>
